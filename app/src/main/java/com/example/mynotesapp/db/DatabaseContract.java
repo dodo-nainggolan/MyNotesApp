@@ -1,4 +1,4 @@
-package db;
+package com.example.mynotesapp.db;
 
 import android.net.Uri;
 import android.provider.BaseColumns;

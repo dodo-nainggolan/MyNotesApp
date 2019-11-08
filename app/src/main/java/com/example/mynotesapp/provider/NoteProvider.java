@@ -1,4 +1,4 @@
-package provider;
+package com.example.mynotesapp.provider;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -9,11 +9,11 @@ import android.net.Uri;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import db.NoteHelper;
+import com.example.mynotesapp.db.NoteHelper;
 
-import static db.DatabaseContract.AUTHORITY;
-import static db.DatabaseContract.NoteColumns.CONTENT_URI;
-import static db.DatabaseContract.TABLE_NAME;
+import static com.example.mynotesapp.db.DatabaseContract.AUTHORITY;
+import static com.example.mynotesapp.db.DatabaseContract.NoteColumns.CONTENT_URI;
+import static com.example.mynotesapp.db.DatabaseContract.TABLE_NAME;
 
 public class NoteProvider extends ContentProvider {
 

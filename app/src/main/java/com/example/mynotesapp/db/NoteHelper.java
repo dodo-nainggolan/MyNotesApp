@@ -1,4 +1,4 @@
-package db;
+package com.example.mynotesapp.db;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,10 +9,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import static android.provider.MediaStore.Audio.Playlists.Members._ID;
-import static db.DatabaseContract.TABLE_NAME;
 
 public class NoteHelper {
-    private static final String DATABASE_TABLE = TABLE_NAME;
+    private static final String DATABASE_TABLE = DatabaseContract.TABLE_NAME;
     private static DatabaseHelper dataBaseHelper;
     private static NoteHelper INSTANCE;
     private static SQLiteDatabase database;

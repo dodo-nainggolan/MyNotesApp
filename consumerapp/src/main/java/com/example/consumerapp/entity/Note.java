@@ -1,4 +1,4 @@
-package entity;
+package com.example.consumerapp.entity;
 
 import android.os.Parcel;
 import android.os.Parcelable;

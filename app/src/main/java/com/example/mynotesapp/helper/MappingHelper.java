@@ -1,11 +1,11 @@
-package helper;
+package com.example.mynotesapp.helper;
 
 import android.database.Cursor;
 
-import java.util.ArrayList;
+import com.example.mynotesapp.db.DatabaseContract;
+import com.example.mynotesapp.entity.Note;
 
-import db.DatabaseContract;
-import entity.Note;
+import java.util.ArrayList;
 
 public class MappingHelper {
     public static ArrayList<Note> mapCursorToArrayList(Cursor notesCursor) {

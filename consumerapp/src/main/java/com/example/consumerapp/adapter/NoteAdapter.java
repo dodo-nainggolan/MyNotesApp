@@ -1,4 +1,4 @@
-package adapter;
+package com.example.consumerapp.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,13 +11,12 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mynotesapp.CustomOnItemClickListener;
-import com.example.mynotesapp.NoteAddUpdateActivity;
-import com.example.mynotesapp.R;
+import com.example.consumerapp.CustomOnItemClickListener;
+import com.example.consumerapp.NoteAddUpdateActivity;
+import com.example.consumerapp.R;
+import com.example.consumerapp.entity.Note;
 
 import java.util.ArrayList;
-
-import entity.Note;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder> {
     private final ArrayList<Note> listNotes = new ArrayList<>();

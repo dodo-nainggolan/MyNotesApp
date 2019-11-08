@@ -1,4 +1,4 @@
-package com.example.mynotesapp;
+package com.example.consumerapp;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,10 +15,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mynotesapp.adapter.NoteAdapter;
-import com.example.mynotesapp.db.DatabaseContract;
-import com.example.mynotesapp.entity.Note;
-import com.example.mynotesapp.helper.MappingHelper;
+import com.example.consumerapp.adapter.NoteAdapter;
+import com.example.consumerapp.db.DatabaseContract;
+import com.example.consumerapp.entity.Note;
+import com.example.consumerapp.helper.MappingHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -39,8 +39,10 @@ public class MainActivity extends AppCompatActivity implements LoadNotesCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (getSupportActionBar() != null)
-            getSupportActionBar().setTitle("Notes");
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Consumer Notes");
+        }
+
         progressBar = findViewById(R.id.progressbar);
         rvNotes = findViewById(R.id.rv_notes);
         rvNotes.setLayoutManager(new LinearLayoutManager(this));
